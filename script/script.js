@@ -17,8 +17,17 @@ p.style.color = 'black';
 
 body.append(h1, button, p)
 
-// button.addEventListener('click', () =>{
-//     if(){
-//
-//     }
-// })
+button.addEventListener('click', () =>{
+
+    // button.style.backgroundColor = 'white';
+    if (body.style.backgroundColor === 'white'){
+        body.style.backgroundColor = 'black';
+        h1.style.color = 'white';
+        p.style.color = 'white';
+        button.style.backgroundColor = 'white'
+    }else if(body.style.backgroundColor === 'black') {
+        body.style.backgroundColor = 'white';
+        h1.style.color = 'black';
+        p.style.color = 'black';
+    }
+});
