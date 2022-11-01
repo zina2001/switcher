@@ -19,7 +19,6 @@ body.append(h1, button, p)
 
 button.addEventListener('click', () =>{
 
-    // button.style.backgroundColor = 'white';
     if (body.style.backgroundColor === 'white'){
         body.style.backgroundColor = 'black';
         h1.style.color = 'white';
@@ -29,5 +28,6 @@ button.addEventListener('click', () =>{
         body.style.backgroundColor = 'white';
         h1.style.color = 'black';
         p.style.color = 'black';
+        button.style.backgroundColor = 'black';
     }
 });
